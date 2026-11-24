@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 18 • Fundamentos do JavaScript Moderno (ES6+)</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0a0f1d;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background-color: #131b2e;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      max-width: 680px;
+      width: 100%;
+      padding: 32px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #f7df1e;
+      color: #000000;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: #94a3b8;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .instrucao-box {
+      background-color: #070b14;
+      border: 1px solid #334155;
+      border-left: 4px solid #38bdf8;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+    }
+
+    .instrucao-box h3 {
+      font-size: 14px;
+      color: #38bdf8;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .instrucao-box p {
+      font-size: 14px;
+      color: #e2e8f0;
+      margin-bottom: 0;
+    }
+
+    .atalho {
+      display: inline-block;
+      background-color: #1e293b;
+      color: #f7df1e;
+      font-family: monospace;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid #475569;
+    }
+
+    .lista-etapas {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .lista-etapas li {
+      font-size: 14px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .lista-etapas li::before {
+      content: '⚡';
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+    }
+  </style>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <main class="card">
+    <span class="badge">SENAI MG • JavaScript ES6+</span>
+    <h1>Atividade 18: Variáveis, Escopo & Tipos Primitivos</h1>
+    <p>Nesta primeira aula de JavaScript, todas as interações e saídas do seu código serão acompanhadas através do <strong>Console do Desenvolvedor</strong> do navegador.</p>
+
+    <div class="instrucao-box">
+      <h3>Como visualizar a execução:</h3>
+      <p>Pressione a tecla <span class="atalho">F12</span> no teclado ou o atalho <span class="atalho">Ctrl + Shift + I</span> e clique na aba <strong>Console</strong>.</p>
+    </div>
+
+    <ul class="lista-etapas">
+      <li><strong>Desafio 1:</strong> Declaração de dados cadastrais usando <code>const</code> e <code>let</code>.</li>
+      <li><strong>Desafio 2:</strong> Cálculo de médias e teste de reatribuição de valores.</li>
+      <li><strong>Desafio 3:</strong> Experimento de vazamento e isolamento de escopo de bloco <code>{ }</code>.</li>
+      <li><strong>Desafio 4:</strong> Verificação dinâmica de tipos com o operador <code>typeof</code>.</li>
+    </ul>
+
+    <div class="footer">
+      Abra o arquivo <strong>js/script.js</strong> no seu VS Code para realizar a atividade.
+    </div>
+  </main>
+</body>
+</html>
